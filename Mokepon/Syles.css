@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Bungee+Spice&family=Combo&family=Luckiest+Guy&family=Poppins:ital@1&display=swap');
+body {
+    height: 800px;
+    background-image: url(https://concepto.de/wp-content/uploads/2018/10/bosque2-e1539893598295.jpg);   
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: Geneva;
+    font-style: italic;
+     
+}
+
+.titulo {
+    color: brown;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 50px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 32px;
+}
+
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 170px;
+    height: 100px;
+    color:brown;
+    background: #C3FF99;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px royalblue;
+    margin: 5px;
+    font-family: Georgia;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    background-color: #2B7A0B;
+    padding: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 3px solid yellowgreen;
+    color: #E8F9FD;
+
+}
+
+input {
+    display: none;  
+}
+
+input:checked + label{
+    background: #876445;
+}
+    
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.boton-de-ataque {
+    background-color: #ADCF9F;
+    color: #4C0033;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 20px;
+    border: 5px solid #AC4425;
+    font-family: 'Combo', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#mensajes {
+    width: 380px;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background: #CC704B;
+    flex-direction: column;
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#boton-reiniciar {
+    border: 5px solid chocolate;
+    color: brown;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: bold;
+    width: 170px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    text-align: center;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 15px solid brown;
+    margin: 20px;
+    background: #B4ECE3;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: #2B7A0B;
+    padding: 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 3px solid yellowgreen;
+    color: #E8F9FD;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+    
+@media (max-width: 300px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

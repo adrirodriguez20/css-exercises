@@ -177,3 +177,57 @@ b::after {
   border: 3px solid blue;
 }
 
+a:visited {
+  color: red;
+}
+
+.caja8 {
+  background: green;
+  height: 200px;
+  width: 200px;
+  margin: 40px;
+}
+
+.caja8:active {
+  background-color: yellowgreen;
+  width: 600px;
+  transition: all 1s;
+}
+
+input:focus{
+  background-color: yellowgreen;
+  width: 600px;
+  transition: all 1s;
+}
+
+/* .caja9 p:lang(en) {
+  background: green;
+  padding: 20px;
+} */
+
+.caja9 {
+  margin: 25px;
+  width: 200px;
+  height: 300px;
+}
+.caja9 img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid red; 
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.cursor {
+  margin: 40px;
+  width: 200px;
+  height: 300px;
+  border: 5px solid brown;
+  background: rgba(56, 90, 36, .5);
+  cursor: pointer;
+  
+}
+
+.flex-container {
+  display: block;
+}

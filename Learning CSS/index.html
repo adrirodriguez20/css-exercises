@@ -57,12 +57,29 @@
   <b>a</b>
 
   <div class="caja6">
-    <a class="caja7" href="https://www.toptal.com/project-managers/tomato-timer" target="_blank">Click aqui</a>
+    <a class="caja7" href="https://www.youtube.com/watch?v=OWKXEJN67FE&t=12685s&ab_channel=SoyDalto" target="_blank">Click aqui</a>
   </div>
 
-  
+   <a href="https://www.youtube.com/watch?v=OWKXEJN67FE&t=12685s&ab_channel=SoyDalto">Click aqui</a>  
 
+  <div class="caja8">Caja</div>
 
+  <input type="text">
+
+  <!-- <div class="caja9">
+    <p lang="en">Hello how are you</p>
+    <p>Hola como estas</p>
+  </div> -->
+
+  <div class="caja9">
+    <img src="https://i.ebayimg.com/images/g/x1kAAOSwKmRj0rfo/s-l500.png">
+  </div>
+
+  <div class="cursor">Cursor</div>
+
+  <div class="flex-container">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ex vel, dignissimos excepturi commodi illo velit sapiente, asperiores nulla minus eius eum laborum distinctio obcaecati quae blanditiis perspiciatis provident. Nostrum.
+  </div>
 
   <!-- MEDIDAS: 
     Fijas: px, cm
@@ -73,8 +90,8 @@
     Viewport: vw (viewport width): 100 es todo el ancho de la pantalla y 100 vh (viewport height) es la medida todo el alto de la pantalla 
     Porcentajes: Relativas a las cajas
   
-  a) outline: shorthand que genera un borde sin afectar ni a la caja ni a las demás cajas
-  b) Position: posicionar con respecto al flujo de html. Cuando se posiciona un elemento se hace que adquiera 4 propiedades: top, left, right y bottom. En html cada caja tiene un espacio reservado. Top y left son las más importantes, funcionan sobre rigth y bottom
+  1) outline: shorthand que genera un borde sin afectar ni a la caja ni a las demás cajas
+  2) Position: posicionar con respecto al flujo de html. Cuando se posiciona un elemento se hace que adquiera 4 propiedades: top, left, right y bottom. En html cada caja tiene un espacio reservado. Top y left son las más importantes, funcionan sobre rigth y bottom
   - position: relative, se hace que el espacio de la caja se conserve. Se le puede dar un top por ejemplo de 300 px y la caja se mueve, pero el espacio en el que estaba se conserva. 
   - z-index: hace que la caja que se posicionó de último quede delante. Se debe aumentar suficiente para que queden suficientes espacios.Funciona solo en elementos posicionados y presenta conflicto entre hijos y padres.
   - position: absolute. El espacio ya no se reserva y esto hace que el otro elemento ocupe ese espacio
@@ -84,7 +101,7 @@
   - position: fixed. Igual que absolute, pero queda fijado.
   - position: sticky, igual que relative, conserva el espacio
 
-  c) Display: modifica el comportamiento de las cajas
+  3) Display: modifica el comportamiento de las cajas
   - block: ocupa todo el ancho
   - inline: ocupa el espacio del contenido
   - inline-block: se pueden modificar las dimensiones de la caja, lo que no se puede con inline, y se puede poner un elemento al lado del otro, lo que no se puede con block
@@ -100,12 +117,12 @@
   -flex
   -grid
 
-  d) Overflow: que hacer con lo que sobra. Cuando el contenido se sale del contenedor, habilita el scroll. Es un shorthand (x,y)
+  4) Overflow: que hacer con lo que sobra. Cuando el contenido se sale del contenedor, habilita el scroll. Es un shorthand (x,y)
   (Y,X), auto, hidden, scroll. Se autoajustan las imágenes
 
-  e) Float: (left, right, None, Inherit). Es útil para posicionar una imagen en medio de un texto
+  5) Float: (left, right, None, Inherit). Es útil para posicionar una imagen en medio de un texto
 
-  f) Seudeoelementos: son elementos que no forman parte del DOM, pero sí tienen efectos visuales 
+  6) Seudeoelementos: son elementos que no forman parte del DOM, pero sí tienen efectos visuales 
   -::first-line BLOCK, solo funciona en elementos de bloque. Se aplican a un elemento, si forma parte del DOM. Cambia la primera linea
   -::first-letter BLOCK, cambia la primera letra. Sí forma parte del DOM 
   Los seudoelementos que requieren de la etiqueta content, no forman parte del DOM
@@ -114,9 +131,33 @@
   -::after - HIJOS - CONTENT (NECESARIO) - INLINE. Se esta creando un hijo del elemento
   -::before - HIJOS - CONTENT (NECESARIO) - INLINE Funcionan en elementos en línea y en bloque
 
-  g) Pseudo clases: Lo que se hace con las pseudoclases es escuchar un evento
+  7) Pseudo clases: Lo que se hace con las pseudoclases es escuchar un evento. 
     -:hover> hace que al pasar el mouse por encima, cambie el aspecto, bien sea el color, letra, etc
     -Transition: determina la velocidad en la que debe cambiar el aspecto del elemento
+    -:link: cambiar el aspecto de un link que no se ha visitado
+    -:visited: cambia el aspecto de un link visitado
+    -:Active: cambia el aspecto del elemento cuando se presiona sobre el
+    -:focus: se aplica mas a los inputs cuando esta en foco, cuando se le da click y se selecciona, se le puede dar aspecto diferente.
+  
+  8) Object-fit: para trabajar con imagenes, modificar resoluciones
+  -contain: viene por defecto y hace que la imagense ajuste a las resoluciones reales 
+  -cover: la imagen se ajusta al contenedor y recorta los bordes para ajustarse al tama;o
+  -none: usa las propiedades por defecto
+  -scale-down: deja las resoluciones de la imagen mas peque;a
+
+  9)Object-position: sirve para posicionar el objeto dentro de la caja: none, right, left, top, bottom, tambien con medidas: px, em, %, etc
+
+  10) Cursor: permite cambiar el cursor
+
+  11) Colores: formas de definir color: los colores primarios son verde, rojo y azul
+  -color name
+  -hexadecimal #f00 : #fff valor maximo, se ponen 3 o 6 unidades
+  -rgb (red, green, blue), de 0 a 255; verde y rojo da amarillo
+  -rgba: (alfa) baja la opacidad del elemento
+
+  12) Responsive design: Mobile first (adaptar primero a un celular, despues a una tablet y luego a escritorio): sirve para adaptar una resolucion a varios dispositivos
+
+  13) Flex box: Flex container y flex item. Main axis and cross axis. Flex box cambia las direcciones de main axis y cross axis
   -->
 </body>
 
